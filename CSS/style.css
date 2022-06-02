@@ -1,0 +1,219 @@
+h1{
+    color: red;
+    color: #f00;
+    color: #ff0000;
+    color: rgb(255,0,0);
+    text-align: center;
+    text-transform: uppercase;
+}
+small{
+    color: brown;
+    display: block;
+    text-indent: 50px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    text-align: justify;
+}
+
+/* universal selector */
+*{
+    /* color: green; */
+    margin: 0px;
+}
+/* TagElement selector */
+span{
+    color: red;
+}
+/* Attribute Selector */
+a[target="blank"] {
+    color: blue;
+}
+
+  /* id Selector */
+  #id_selector{
+      color: red;
+  }
+
+  /* class selector */
+  .classone{
+      line-height: 30px;
+      text-indent: 50px;
+      letter-spacing: 10px;
+  }
+
+  /* Descent Selecotr */
+  p.desc a{
+      color: red;
+  }
+
+  /* child selecore */
+  .child > a{
+      color: blue;
+  }
+
+  /* pseudo selecortor */
+  a:link{
+      color: red;
+  }
+  a:hover{
+      color: blue;
+  }
+  a:active{
+      color: yellow;
+  }
+  a:visited{
+      color: red;
+  }
+  /* target */
+  :target{
+      color: red;
+      border: 1px solid black;
+      word-spacing: 30px;
+      font-size: 30px;
+  }
+
+  /* border */
+  .borderone{
+      border: 10px solid yellow;
+  }
+  .bordertwo{
+      border-bottom: 5px solid red;
+      border-top: 5px solid yellow;
+  }
+  .borderstyle{
+     border-style: dotted;
+  }
+  .borderstylemix{
+   border-style: dashed solid double dotted;
+   /* T R B L */
+  }
+
+  .borderwidth{
+      border-width: 20px;
+      border-style: solid;
+  }
+
+  .marginone{
+      border: 1px solid black;
+      margin: 50px;
+  }
+  .margin{
+      margin-left: 100px;
+      border: 1px solid red;
+  }
+  .paddingone{
+      border: 1px solid rgb(197, 197, 56);
+      padding: 100px;
+  }
+  .padding{
+      border: 1px solid blueviolet;
+      padding: 100px;
+  }
+
+  /* Layout */
+  .inline{
+    border: 1px solid red;
+    display: inline-block;
+    width: 50px;
+  }
+
+  .block{
+     border: 1px solid green;
+     width: 400px;
+     display: inline-block;
+  }
+  
+  /* Float */
+  .float_left img{
+      width: 40%;
+      float: left;
+  }
+  .clear{
+    clear: both;
+  }
+  .float_right img{
+      width: 50%;
+      float: right;
+  }
+
+  .gridone div,.gridtwo div,.gridthree div,.gridfour div,.gridfive div,.gridsix div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .gridone,.gridtwo,.gridthree,.gridfour,.gridfive,.gridsix{
+      display: grid;
+      grid-template-columns: auto auto auto;
+  }
+  .gridtwo{
+     grid-column-gap: 40px;
+  }
+  .gridthree{
+      grid-row-gap: 50px;
+  }
+
+  .gridfour{
+      grid-gap: 50px; 
+  }
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+ 
+/* Position */
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative{
+    border: 1px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.absolute_parent{
+    position: relative;
+    border: 1px solid yellow;
+    width: 1000px;
+    height: 500px;
+
+}
+
+.absolute{
+    border: 1px solid blue;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 500px;
+}
+.fixed{
+    position: fixed;
+    top: 100px;
+    left: 1000px;
+}
+
+/* Font */
+.online{
+    font-family: 'Lobster', cursive;
+}
+
+@font-face{
+    src: url(Lobster/Lobster-Regular.ttf);
+    font-family: a;
+}
+.offline{
+    font-family: a;
+    font-size: 30px;
+}
