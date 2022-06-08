@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myForm"></form>
+    <label for="name">Cs language</label>
+    <input type="text" name="name" id="name">
+    <br><br>
+    <button type="button" onclick="add_cs()">Add</button>
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            document.write('<h3>Hello JS </h3>');
+        }
+        
+        function add_cs() {
+            let data = document.myForm.name.value;
+            console.log(data);
+            let list = data.split(',');
+            for (let j = 0; j < list.length; j++){
+                document.write(`<h3>${list[j]}</h3>`);
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
