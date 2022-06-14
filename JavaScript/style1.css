@@ -1,0 +1,8 @@
+.btn_color{
+    background-color: rgb(205, 205, 234);
+    border: 1px;
+}
+
+a:hover{
+    background-color: rgb(92, 92, 126);
+}

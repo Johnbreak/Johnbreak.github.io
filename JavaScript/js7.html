@@ -9,26 +9,39 @@
 </head>
 
 <body>
-    <form name="myForm"></form>
-    <label for="name">Cs language</label>
-    <input type="text" name="name" id="name">
-    <br><br>
-    <button type="button" onclick="add_cs()">Add</button>
+  <form name="myForm">
+      <label for="name">CS Language</label>
+      <input type="text" name="name" id="name">
+      <br><br>
+      <button type="button" onclick="add_cs()">Add</button>
+  </form>
     <script>
-        for (let i = 1; i <= 5; i++) {
-            document.write('<h3>Hello JS </h3>');
+        //for loop
+        for (let i = 1; i<5; i++){
+            document.write(`<h3>Hello JS</h3>`);
         }
-        
+
         function add_cs() {
             let data = document.myForm.name.value;
             console.log(data);
             let list = data.split(',');
-            for (let j = 0; j < list.length; j++){
-                document.write(`<h3>${list[j]}</h3>`);
+            for (let j = 0; j<list.length; j++) {
+                document.write(`<h3>${list[j]}</h3>`)
             }
         }
 
+        // While loop
+        let num = 1
+        while(nu <= 0){
+            document.write(`<h3>This is ${no}</h3>`);
+            no++;
+        }
 
+        let num = 1;
+        do{
+            document.write(`<h3>This num is ${num}</h3>`)
+            num++;
+        }while(num <= 0)
 
     </script>
 </body>
